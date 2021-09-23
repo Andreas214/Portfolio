@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 const Background = styled.div`
     animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
+    background-image: linear-gradient(-60deg, #3c4e79 50%, #09f 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -29,7 +29,7 @@ const Background = styled.div`
 
 const BackgroundSlide1 = styled.div`
     animation:slide ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
+    background-image: linear-gradient(-60deg, #3c4e79 50%, #09f 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -45,7 +45,7 @@ const BackgroundSlide1 = styled.div`
 
 const BackgroundSlide2 = styled.div`
     animation:slide ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
+    background-image: linear-gradient(-60deg, #3c4e79 50%, #09f 50%);
     bottom:0;
     left:-50%;
     opacity:.5;
