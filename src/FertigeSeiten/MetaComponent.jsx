@@ -102,14 +102,16 @@ export const CardImageFlow = styled.div`
 
 export const CardPreview = styled.div`
     padding: 1%;
+    display: flex;
+    justify-content: center;
 
     img{
-        width: fit-content;
+        width: 300px;
         height: 250px;
         padding-top: 5%;
 
         @media screen and (max-width: 750px) {
-            width: 90%;
+           
     }
     }
 `;
