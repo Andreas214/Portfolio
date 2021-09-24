@@ -14,7 +14,7 @@ import Crowdfunding from './Junior3(bearbeitet)/App'
 export default function Portfolio() {
 
     const Sites = [
-        ["Crowdfunding", <Crowdfunding/>, "/crowdfunding", "Diese Seite wird zur Zeit noch bearbeitet"],
+        ["Crowdfunding", <Crowdfunding/>, "/crowdfunding", "Diese Seite wird zur Zeit noch bearbeitet, Junior Challenge Crowdfunding aus frontendmentor.io"],
         ["Sunnyside", <Sunnyside/>, "/sunnyside", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Sunnyside' aus frontendmentor.io"],
         ["Blogr", <Blogr/>, "/blogr", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Blogr' aus frontendmentor.io"],
         ["Four Cards",<FourCard2/>, "/fourcard", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Four Cards' aus frontendmentor.io"],

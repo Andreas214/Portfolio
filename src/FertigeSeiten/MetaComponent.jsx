@@ -110,8 +110,8 @@ export const CardPreview = styled.div`
         height: 250px;
         padding-top: 5%;
 
-        @media screen and (max-width: 750px) {
-           
+        @media screen and (min-width: 750px) {
+           width: 400px;
     }
     }
 `;
