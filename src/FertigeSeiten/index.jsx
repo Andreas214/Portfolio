@@ -1,11 +1,8 @@
 import React from 'react'
-import FourCard2 from './Newbie6(fertig)'
-import Huddle from './Newbie1(fertig)'
-import PingComingSoon from './Newbie2(fertig)'
 import SinglePrice from './Newbie3(fertig)'
 import { ImageContainer } from '../images/imagecontainer'
 import { Link } from 'react-router-dom';
-import { CardTitle, Container, WebCard, WebCardContainer, WebContainer, CardImageFlow, CardPreview, Footer } from './MetaComponent'
+import { CardTitle, Container, WebCard, WebCardContainer, WebContainer, CardImageFlow, CardPreview, Footer, Name } from './MetaComponent'
 import PortfolioBackground from '../PortfolioBackground'
 import Blogr from './Junior1(fertig)/App'
 import Sunnyside from './Junior2(fertig)/App'
@@ -17,37 +14,38 @@ export default function Portfolio() {
         ["Crowdfunding", <Crowdfunding/>, "/crowdfunding", "Diese Seite wird zur Zeit noch bearbeitet, Junior Challenge Crowdfunding aus frontendmentor.io"],
         ["Sunnyside", <Sunnyside/>, "/sunnyside", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Sunnyside' aus frontendmentor.io"],
         ["Blogr", <Blogr/>, "/blogr", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Blogr' aus frontendmentor.io"],
-        ["Four Cards",<FourCard2/>, "/fourcard", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Four Cards' aus frontendmentor.io"],
-        ["Huddle",<Huddle/>, "/huddle", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Huddle' aus frontendmentor.io" ],
-        ["Ping",<PingComingSoon/>, "/ping", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Ping Coming Soon' aus frontendmentor.io"],
         ["Single Price", <SinglePrice/>, "/singleprice", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Single Price' aus frontendmentor.io"],   
     ]
     
 
     return (
         <div>
-        <Container>
-            <WebContainer>
-                <PortfolioBackground/>
-                <WebCardContainer>
-                    {Sites.map((card, index) => (
-                        <WebCard>
-                            <CardTitle>{card[0]}</CardTitle>
-                            <CardImageFlow>
-                                <CardPreview>
-                                    <img src={ImageContainer[index]} alt="preview of the site"></img>
-                                </CardPreview>
-                            </CardImageFlow>
-                            <p>{card[3]}</p>
-                            <Link to={card[2]} target="_blank">Open</Link>
-                        </WebCard>
-                    ))}
-                </WebCardContainer>
-            </WebContainer>
-            <Footer>
-                
-            </Footer>
-        </Container>
+            <Name>
+                <h2>Webdesign-Portfolio von Andreas Römer</h2>
+                <p>React Lernernder</p>
+            </Name>
+            <Container>
+                <WebContainer>
+                    <PortfolioBackground/>
+                    <WebCardContainer>
+                        {Sites.map((card, index) => (
+                            <WebCard>
+                                <CardTitle>{card[0]}</CardTitle>
+                                <CardImageFlow>
+                                    <CardPreview>
+                                        <img src={ImageContainer[index]} alt="preview of the site"></img>
+                                    </CardPreview>
+                                </CardImageFlow>
+                                <p>{card[3]}</p>
+                                <Link to={card[2]} target="_blank">Open</Link>
+                            </WebCard>
+                        ))}
+                    </WebCardContainer>
+                </WebContainer>
+                <Footer>
+                    
+                </Footer>
+            </Container>
         </div>
     )
 }

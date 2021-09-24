@@ -16,6 +16,10 @@ const SmallTestimonials = styled.h5`
     font-weight: 900;
     letter-spacing: 3px;
     margin-top: 10%;
+
+    @media screen and (min-width: 1650px){
+        margin-top: 15%;
+    }
 `;
 
 const ClientPicture = styled.img`

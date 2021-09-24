@@ -137,52 +137,16 @@ export const CardLink = styled.a`
     }
 `;
 
-export const Background = styled.div`
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
+export const Name = styled.div`
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-color: white;
 
-      @keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
-}
-`;
-
-export const BackgroundSlide1 = styled.div`
-    animation:slide ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-    animation-direction:alternate-reverse;
-    animation-duration:7s;
-
-
-`;
-
-export const BackgroundSlide2 = styled.div`
-    animation:slide ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #ec9626 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:fixed;
-    right:-50%;
-    top:0;
-    z-index:-1;
-    animation-duration:9s;
+    h2{
+        font-size: 24px;
+    }
 `;
