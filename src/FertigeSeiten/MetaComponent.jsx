@@ -40,14 +40,11 @@ export const WebContainer = styled.div`
     grid-row: 2; 
     height: max-content;
     padding: 2% 0;
-`;
+    margin-top: 35%;
 
-
-export const Footer = styled.div`
-    height: 100%;
-    width: 100%;
-    background-color: #1f43af;
-    grid-row: 3;
+    @media screen and (min-width: 750px){
+        margin-top: 5%;
+    }
 `;
 
 export const WebCardContainer = styled.div`
@@ -77,6 +74,7 @@ export const WebCard = styled.div`
     color: #1a2930;
     font-weight: bolder;
     overflow: hidden;
+    z-index: 2;
     
     @media screen and (max-width: 750px) {
         width: 90%;
@@ -138,15 +136,30 @@ export const CardLink = styled.a`
 `;
 
 export const Name = styled.div`
-    height: 150px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     color: white;
     -webkit-text-stroke: 1px white;
     -webkit-text-color: white;
+    background: #3c4e79;
+    background: linear-gradient(180deg, #3c4e79 0%, #0099ff11 100%);
 
-    h2{
-        font-size: 24px;
+
+    @media screen and (min-width: 750px){
+
     }
+
+    *{
+        
+    }
+    h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
 `;

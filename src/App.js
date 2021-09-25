@@ -6,6 +6,7 @@ import PingComingSoon from './FertigeSeiten/Newbie2(fertig)';
 import { Navbar } from './FertigeSeiten/MetaComponent';
 import Blogr from './FertigeSeiten/Junior1(fertig)/App';
 import Sunnyside from './FertigeSeiten/Junior2(fertig)/App';
+import About from './About';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Navbar>
           <Link to="/">Home</Link>
           <a href="https://fallingtonewheights.wordpress.com/blog">Blog</a>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </Navbar>
         <Switch>
           <Route exact path="/">
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/sunnyside">
             <Sunnyside />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
         </Switch>
       </div>

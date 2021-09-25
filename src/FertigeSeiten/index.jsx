@@ -2,19 +2,19 @@ import React from 'react'
 import SinglePrice from './Newbie3(fertig)'
 import { ImageContainer } from '../images/imagecontainer'
 import { Link } from 'react-router-dom';
-import { CardTitle, Container, WebCard, WebCardContainer, WebContainer, CardImageFlow, CardPreview, Footer, Name } from './MetaComponent'
+import { CardTitle, Container, WebCard, WebCardContainer, WebContainer, CardImageFlow, CardPreview, Name } from './MetaComponent'
 import PortfolioBackground from '../PortfolioBackground'
 import Blogr from './Junior1(fertig)/App'
 import Sunnyside from './Junior2(fertig)/App'
-import Crowdfunding from './Junior3(bearbeitet)/App'
+import FourCard2 from './Newbie6(fertig)';
 
 export default function Portfolio() {
 
     const Sites = [
-        ["Crowdfunding", <Crowdfunding/>, "/crowdfunding", "Diese Seite wird zur Zeit noch bearbeitet, Junior Challenge Crowdfunding aus frontendmentor.io"],
         ["Sunnyside", <Sunnyside/>, "/sunnyside", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Sunnyside' aus frontendmentor.io"],
         ["Blogr", <Blogr/>, "/blogr", "Der Link unten führt zu meiner Umsetzung der Junior Challenge 'Blogr' aus frontendmentor.io"],
         ["Single Price", <SinglePrice/>, "/singleprice", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Single Price' aus frontendmentor.io"],   
+        ["Four Cards", <FourCard2/>, "/fourcards", "Der Link unten führt zu meiner Umsetzung der Newbie Challenge 'Four Cards' aus frontendmentor.io"]
     ]
     
 
@@ -22,7 +22,7 @@ export default function Portfolio() {
         <div>
             <Name>
                 <h2>Webdesign-Portfolio von Andreas Römer</h2>
-                <p>React Lernernder</p>
+                <p>Webseiten erstellt mit React Styled-Components</p>
             </Name>
             <Container>
                 <WebContainer>
@@ -42,9 +42,6 @@ export default function Portfolio() {
                         ))}
                     </WebCardContainer>
                 </WebContainer>
-                <Footer>
-                    
-                </Footer>
             </Container>
         </div>
     )
