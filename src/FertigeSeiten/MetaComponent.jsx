@@ -89,6 +89,9 @@ export const WebCard = styled.div`
         border-bottom: 1px solid #3c4e79;
         line-height: 1.4;
     }
+    :hover{
+        transform: scale(1.05);
+    }
 `;
 
 export const CardImageFlow = styled.div`
