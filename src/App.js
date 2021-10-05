@@ -1,12 +1,12 @@
 import './App.css';
 import Portfolio from './FertigeSeiten/index';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import SinglePrice from './FertigeSeiten/Newbie3(fertig)';
 import PingComingSoon from './FertigeSeiten/Newbie2(fertig)';
 import { Navbar } from './FertigeSeiten/MetaComponent';
 import Blogr from './FertigeSeiten/Junior1(fertig)/App';
 import Sunnyside from './FertigeSeiten/Junior2(fertig)/App';
 import About from './About';
+import FourCard2 from './FertigeSeiten/Newbie6(fertig)';
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
           <Route exact path="/">
             <Portfolio />
           </Route>
-          <Route path="/singleprice">
-            <SinglePrice />
+          <Route path="/fourcards">
+            <FourCard2 />
           </Route>
           <Route path="/ping">
             <PingComingSoon />
